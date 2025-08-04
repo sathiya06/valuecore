@@ -78,7 +78,6 @@ class LLMService:
             current_ui_context=[context_msg],
             input=message
         )
-        print(f"Formatted prompt: {formatted}")
 
         # Invoke LLM and get structured response
         response: ROIResponse = self.structured_llm.invoke(formatted)
